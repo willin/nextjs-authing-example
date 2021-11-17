@@ -1,9 +1,9 @@
 import dynamic from 'next/dynamic';
 import type { NextPage } from 'next';
 
-const DynamicComponentWithNoSSR = dynamic(() => import('../components/login'), { ssr: false });
+const DynamicComponentWithNoSSR = dynamic(() => import('../components/callback'), { ssr: false });
 
-const Home: NextPage = () => {
+const Callback: NextPage = () => {
   return (
     <div>
       <DynamicComponentWithNoSSR></DynamicComponentWithNoSSR>
@@ -11,4 +11,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Callback;
