@@ -46,7 +46,7 @@ export default function UserInfo() {
           {Object.keys(info).map((key) => (
             <li key={key}>
               <strong>{key}:</strong>
-              {info[key]}
+              {String(info[key])}
             </li>
           ))}
         </ul>
